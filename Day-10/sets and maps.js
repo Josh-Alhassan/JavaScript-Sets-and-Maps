@@ -124,3 +124,13 @@ let difference_c = a.filter((num) => {
 let difference_C = new Set(difference_c)
 
 console.log(difference_C)
+
+// ##############
+// Map
+// ##############
+console.log('')
+console.log('MAP')
+console.log('Creating an empty Map')
+
+const map = new Map()
+console.log(map)

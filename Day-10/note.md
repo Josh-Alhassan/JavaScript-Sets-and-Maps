@@ -13,3 +13,5 @@ Finding an intersection of two sets can be achieved using ***filter***.
 
 ## Difference of sets
 Findng the difference between two sets can be achieved using ***filter***.
+
+# Map
