@@ -111,3 +111,16 @@ let intersectionC = a.filter((num) => B.has(num))
 let intersectionc = new Set(intersectionC)
 
 console.log(intersectionc)
+
+// Difference of sets
+console.log('Difference of Sets')
+console.log(`let's find the difference of set A and set B (A \ B)`)
+
+// var a, b, A, B and C remains the same as in union set and intersection Set
+let difference_c = a.filter((num) => {
+  return !B.has(num)
+})
+
+let difference_C = new Set(difference_c)
+
+console.log(difference_C)
