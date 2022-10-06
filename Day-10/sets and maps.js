@@ -46,3 +46,8 @@ for (const company of companies) {
   setOfCompanies.add(company)
 }
 console.log('Set of Companies set added:', setOfCompanies)
+
+// Deleting an element of a set
+console.log('Deleting an Element of a set')
+console.log(companies.delete('Google'))
+console.log('companies size after deletion:', companies.size)
