@@ -7,3 +7,6 @@ set is a collection of elements. Set can only contain unique elements.
 
 ## Union of sets
 finding a union of two sets can be achieved using spread operator.
+
+## Intersection of sets
+Finding an intersection of two sets can be achieved using ***filter***. 

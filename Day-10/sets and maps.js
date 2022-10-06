@@ -101,3 +101,13 @@ let B = new Set(b)
 let C = new Set(c)
 
 console.log(C)
+
+// Intersection of Sets
+console.log('Intersection of Sets')
+console.log(`let's find the intersection of set A and set B (A n B)`)
+
+// var a, b, A, B and C remains the same as in union set
+let intersectionC = a.filter((num) => B.has(num))
+let intersectionc = new Set(intersectionC)
+
+console.log(intersectionc)
