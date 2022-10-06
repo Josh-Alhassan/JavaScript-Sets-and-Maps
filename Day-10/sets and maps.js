@@ -132,5 +132,25 @@ console.log('')
 console.log('MAP')
 console.log('Creating an empty Map')
 
-const map = new Map()
+let map = new Map()
 console.log(map)
+
+// creating a map from array
+const countries = [
+  ['Finland', 'Helsinki'],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo'],
+]
+map = new Map(countries)
+console.log(map)
+console.log(map.size)
+
+// Adding Values to the map
+console.log('Adding values to the Map')
+const countriesMap = new Map()
+console.log(countriesMap.size);
+countriesMap.set('Nigeria', 'Abuja')
+countriesMap.set('America', 'Washignton DC')
+countriesMap.set('Norway', 'Oslo')
+console.log(countriesMap)
+console.log('Country map size:', countriesMap.size)
