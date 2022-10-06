@@ -20,3 +20,5 @@ Findng the difference between two sets can be achieved using ***filter***.
 
 ## Checking Key in Map
 Check if a key exists in a Map using <code>has()</code> method. It returns *true* or *false*.
+
++ Getting values from map using loop returns the results in **Array**

@@ -160,3 +160,12 @@ console.log(countriesMap.get('Nigeria'))
 
 // Checking Key in Map
 console.log(countriesMap.has('America'))
+
+// Getting all values from map using loop
+for (const country of countriesMap) {
+  console.log(country)
+}
+
+for (const [country, city] of countriesMap) {
+  console.log(country, city)
+}
