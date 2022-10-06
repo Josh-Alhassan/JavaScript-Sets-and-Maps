@@ -87,3 +87,17 @@ const numbers = [5, 3, 2, 5, 5, 9, 4, 5];
 const setOfNumbers = new Set(numbers)
 
 console.log(setOfNumbers)
+
+// Union of sets
+console.log('Union Of Sets')
+console.log('Lets find the union of set A and set B (A U B)')
+
+let a = [1, 2, 3, 4, 5];
+let b = [3, 4, 5, 6];
+let c = [...a, ...b];
+
+let A = new Set(a)
+let B = new Set(b)
+let C = new Set(c)
+
+console.log(C)
