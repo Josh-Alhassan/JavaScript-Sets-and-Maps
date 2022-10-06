@@ -15,3 +15,8 @@ Finding an intersection of two sets can be achieved using ***filter***.
 Findng the difference between two sets can be achieved using ***filter***.
 
 # Map
++ To add values to **Map** object, we use <code>set()</code>.
++ To get values from **Map** object, we use <code>get()</code>.
+
+## Checking Key in Map
+Check if a key exists in a Map using <code>has()</code> method. It returns *true* or *false*.

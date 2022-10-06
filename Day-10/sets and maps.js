@@ -154,3 +154,9 @@ countriesMap.set('America', 'Washignton DC')
 countriesMap.set('Norway', 'Oslo')
 console.log(countriesMap)
 console.log('Country map size:', countriesMap.size)
+
+// Getting a value from Map
+console.log(countriesMap.get('Nigeria'))
+
+// Checking Key in Map
+console.log(countriesMap.has('America'))
