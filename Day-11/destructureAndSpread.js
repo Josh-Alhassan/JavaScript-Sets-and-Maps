@@ -246,3 +246,18 @@ const backend = ['Node', 'Express', 'MongoDB'];
 const fullstack = [...frontend, ...backend];
 
 console.log(fullstack)
+
+// Spread operator to copy object - We can copy an object using a spread operator
+
+const user = {
+    name: 'Alhassan',
+    title: 'Software Engineer',
+    city: 'Helsinki',
+}
+
+const copiedUser = {...user}
+console.log(copiedUser)
+
+// Modifying the object while copying
+const modifiedUser = {...user, title: 'instructor'}
+console.log(modifiedUser)
