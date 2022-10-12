@@ -11,7 +11,7 @@ When we destructure an object, the name of the variable we use should be exactly
 ***obeservation*** Destructuring in Arrays use square brackets '[]', while in objects, curly brackets '{ }'.
 
 ## Spread or Rest Operator
-When we destructure an array, we ue the *spread* operator (...) to get the rest elements as arrays. We also use spread operator to spread array elements to another array.
+When we destructure an array, we use the *spread* operator (...) to get the rest elements as arrays. We also use spread operator to spread array elements to another array.
 
 ### Spread operator with arrow function
 Whenever we like to write an arrow function which takes unlimited number of arguments, we use a *spread* operator. *When we use a spread operator as a parameter, the argument passed when we invoke a function will change to an array*.
