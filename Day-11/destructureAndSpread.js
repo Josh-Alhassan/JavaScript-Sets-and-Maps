@@ -87,3 +87,13 @@ console.log(fullStack)
 for ([first, second, third] of fullStack) {
     console.log(first, second, third)
 }
+
+// Destructuring Object
+const rectangle = {
+    width: 20,
+    height: 10,
+    area: 200
+}
+
+let { width, height, area, perimeter} = rectangle;
+console.log(width, height, area, perimeter)

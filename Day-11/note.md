@@ -4,3 +4,8 @@ Destructuring is a way of unpacking arrays and objects and assigning them to a d
 In destructuring, if we like to skip values in an array, we use additional comma. The comma helps to omit the value at that specific index. We can use default value in case the value of array for that index is 'undefined'.
 
 **Warning** We can not assign variable to all the elements in the array. We can destucture few of the first and we can get the remaining using 'spread' operator(...).
+
+## Destructuring Object
+When we destructure an object, the name of the variable we use should be exactly the same as the key or property of the object.
+
+***obeservation*** Destructuring in Arrays use square brackets '[]', while in objects, curly brackets '{ }'.
