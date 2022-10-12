@@ -71,3 +71,19 @@ let [num1, num2, num3, ...rest] = nums;
 
 console.log(num1, num2, num3)
 console.log(rest)
+
+// ###################
+spaceInConsole()
+title('=== Destructuring during iteration ===')
+// ###################
+
+const countries = [['Finland', 'Helsinki'], ['Swedein', 'stockholm'], ['Norway', 'Oslo'], ['Nigeria', 'Abuja']]
+
+for (const [country, city] of countries) {
+    console.log(country, city)
+}
+
+console.log(fullStack)
+for ([first, second, third] of fullStack) {
+    console.log(first, second, third)
+}
