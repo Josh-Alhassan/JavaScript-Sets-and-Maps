@@ -5,4 +5,4 @@
 // import './Day-10/sets and maps.js'
 // Write Javascript code! 
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Sets and Maps</h1>`;
+appDiv.innerHTML = `<h1>JS Destructuring And Spreading</h1>`;
