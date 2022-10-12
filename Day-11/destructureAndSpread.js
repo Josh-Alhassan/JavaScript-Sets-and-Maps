@@ -112,8 +112,12 @@ const rect = {
     height: 10
 }
 
-const calculateParameter = rectangle => {
-    return 2 * (rectangle.width + rectangle.height)
+// const calculateParameter = rectangle => {
+//     return 2 * (rectangle.width + rectangle.height)
+// }
+
+const calculateParameter = ({width, height}) => {
+    return 2 * (width + height)
 }
 
 console.log(calculateParameter(rect))
@@ -137,16 +141,33 @@ const person = {
 }
 
 // Let us create a function which give information about the person without destructuring
-const getPersonInfo = obj => {
-    const skills = obj.skills;
-    console.log(skills)
-    const formattedSkills = skills.slice(0, -1).join(', ');
-    console.log(formattedSkills)
-    const langauges = obj.langauges
-    console.log(langauges)
-    formattedLanguages = langauges.slice(0, -1).join(', ');
+// const getPersonInfo = obj => {
+//     const skills = obj.skills;
+//     console.log(skills)
+//     const formattedSkills = skills.slice(0, -1).join(', ');
+//     console.log(formattedSkills)
+//     const langauges = obj.langauges
+//     console.log(langauges)
+//     formattedLanguages = langauges.slice(0, -1).join(', ');
 
-    let personInfo = `${obj.firstName} ${obj.lastName} lives in ${obj.country}. He is ${obj.age} years old. He is an ${obj.job}. He teaches ${formattedSkills} and ${skills[skills.length -1]}. He speaks ${formattedLanguages} and a little bit of ${langauges[2]}`
+//     let personInfo = `${obj.firstName} ${obj.lastName} lives in ${obj.country}. He is ${obj.age} years old. He is an ${obj.job}. He teaches ${formattedSkills} and ${skills[skills.length -1]}. He speaks ${formattedLanguages} and a little bit of ${langauges[2]}`
+
+//     return personInfo
+// }
+
+const getPersonInfo = ({
+    firstName,
+    lastName,
+    age,
+    country,
+    job,
+    skills,
+    langauges
+}) => {
+    const formattedSkills = skills.slice(0, -1).join(', ');
+    const formattedLanguages = langauges.slice(0, -1).join(', ');
+
+    let personInfo = `${firstName} ${lastName} lives in ${country}. He is ${age} years old. He is an ${job}. He teaches ${formattedSkills} and ${skills[skills.length - 1]}. He speaks ${formattedLanguages} and a little bit of ${langauges[2]}`
 
     return personInfo
 }
