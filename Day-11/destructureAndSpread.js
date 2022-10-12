@@ -103,3 +103,52 @@ let { width, height, area, perimeter = 60} = rectangle;
 console.log(width, height, area, perimeter)
 // console.log(w, h, a, p)
 
+// Object parameter without destructuring
+spaceInConsole()
+title('Object parameter without destructuring')
+
+const rect = {
+    width: 20,
+    height: 10
+}
+
+const calculateParameter = rectangle => {
+    return 2 * (rectangle.width + rectangle.height)
+}
+
+console.log(calculateParameter(rect))
+
+const person = {
+    firstName: 'Joshua',
+    lastName: 'Alhassan',
+    age: 24,
+    country: 'Nigeria',
+    job: 'Instructor and founder of codescript',
+    skills: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'React',
+        'Git',
+        'GitHub',
+        'Python'
+    ],
+    langauges: ['Hausa', 'English', 'Igala']
+}
+
+// Let us create a function which give information about the person without destructuring
+const getPersonInfo = obj => {
+    const skills = obj.skills;
+    console.log(skills)
+    const formattedSkills = skills.slice(0, -1).join(', ');
+    console.log(formattedSkills)
+    const langauges = obj.langauges
+    console.log(langauges)
+    formattedLanguages = langauges.slice(0, -1).join(', ');
+
+    let personInfo = `${obj.firstName} ${obj.lastName} lives in ${obj.country}. He is ${obj.age} years old. He is an ${obj.job}. He teaches ${formattedSkills} and ${skills[skills.length -1]}. He speaks ${formattedLanguages} and a little bit of ${langauges[2]}`
+
+    return personInfo
+}
+
+console.log(getPersonInfo(person))
