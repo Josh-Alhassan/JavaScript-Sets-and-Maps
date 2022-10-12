@@ -199,3 +199,28 @@ const todoList = [
 for (const {task, time, completed} of todoList) {
     console.log(task, time, completed)
 }
+
+// Spead or Rest Operator
+spaceInConsole()
+title('=== Spread or Rest Operator ===')
+
+const spreadNums = [1, 2, 3, 4, 5, 7, 8, 9, 10]
+let [sNum1, sNum2, sNum3, ...others] = spreadNums;
+console.log(sNum1, sNum2, sNum3);
+console.log(others);
+
+const spreadCountries = [
+    'Germany',
+  'France',
+  'Belgium',
+  'Finland',
+  'Sweden',
+  'Norway',
+  'Denmark',
+  'Iceland'
+]
+
+let [gem, fra, , ...nordicCountries] = spreadCountries
+console.log(gem)
+console.log(fra)
+console.log(nordicCountries)
