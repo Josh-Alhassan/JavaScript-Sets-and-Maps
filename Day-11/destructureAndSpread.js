@@ -98,7 +98,8 @@ const rectangle = {
     area: 200
 }
 
-let { width: w, height: h, area: a, perimeter: p} = rectangle;
-// console.log(width, height, area, perimeter)
-console.log(w, h, a, p)
+// let { width: w, height: h, area: a, perimeter: p} = rectangle;
+let { width, height, area, perimeter = 60} = rectangle;
+console.log(width, height, area, perimeter)
+// console.log(w, h, a, p)
 
