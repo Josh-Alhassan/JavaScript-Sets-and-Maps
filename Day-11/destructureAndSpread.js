@@ -89,11 +89,16 @@ for ([first, second, third] of fullStack) {
 }
 
 // Destructuring Object
+spaceInConsole()
+title('=== Destructuring Object ===')
+
 const rectangle = {
     width: 20,
     height: 10,
     area: 200
 }
 
-let { width, height, area, perimeter} = rectangle;
-console.log(width, height, area, perimeter)
+let { width: w, height: h, area: a, perimeter: p} = rectangle;
+// console.log(width, height, area, perimeter)
+console.log(w, h, a, p)
+
