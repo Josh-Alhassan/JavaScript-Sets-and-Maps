@@ -261,3 +261,17 @@ console.log(copiedUser)
 // Modifying the object while copying
 const modifiedUser = {...user, title: 'instructor'}
 console.log(modifiedUser)
+
+// Spread operator with arrow function
+title('### Spread operator with arrow function')
+
+const sumAllNums = (...args) => {
+    // console.log(args)
+    let sum = 0;
+    for (const num of args){
+        sum += num
+    }
+    return sum
+}
+
+console.log(sumAllNums(1, 2, 3, 4, 5))
