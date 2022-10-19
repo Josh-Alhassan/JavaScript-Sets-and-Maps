@@ -29,9 +29,9 @@ Flags are optional parameter in a regular expression which determine the type of
 + .: Any character except new line character (\n)
 + ^: Starts with
 + $: ends with
-+ *: zero or more times
++ *: zero or more times - The pattern may not occur or it can occur many times.
 + +: One or more times
-+ ?: zero or one time
++ ?: zero or one time - The pattern may not occur or it may occur once.
 + \b: word bounder. Matches with the beginning or ending of a word
 + {3}: Exactly 3 characters
 + {3,8}: 3 to 8 characters

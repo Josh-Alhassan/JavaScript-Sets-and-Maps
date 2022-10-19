@@ -74,3 +74,37 @@ console.log(matches)
 let oneOrMorePattern = /\d+/g;
 matches = moreTxt.match(escapePattern)
 console.log(matches)
+
+// Period(.)
+let periodPattern = /[a].+/g // this square bracket means 'a' and '.' means any character excepts new line
+moreTxt = 'Apple and banana are fruits';
+matches = moreTxt.match(periodPattern)
+
+console.log(matches)
+
+// Zero or More times(*)
+periodPattern = /[a].*/g // any character, + any character one or more times
+console.log(moreTxt);
+matches = moreTxt.match(periodPattern)
+console.log(matches)
+
+// Zero or one times(?)
+moreTxt = 'I am not sure if there is a convention how to write the word e-mail.\
+Some people write it email others may write it as Email or E-mail.'
+let zeroOrOnePattern = /[Ee]-?mail/g // ? means optional
+matches = moreTxt.match(zeroOrOnePattern)
+
+console.log(matches)
+
+// Quantifier in RegExp
+// We can specify the length of the substring we look for in a text, using a curly bracket
+moreTxt = 'This regular expression example was made in December 6, 2019.'
+let regPattern = /\\b\w{4}\b/g // exatly four words
+matches = moreTxt.match(regPattern)
+console.log(matches)
+
+// Starts with ^
+moreTxt = 'This regular expression example was made in December 6,  2019.'
+regPattern = /^This/ // ^ means starts with
+matches = txt.match(regPattern)
+console.log(matches)  // ['This']
