@@ -57,3 +57,15 @@ squarePattern = /[Aa]pple|[Bb]anana/g
 matches = moreTxt.match(squarePattern)
 
 console.log(matches)
+
+// Escape character(\) in RegExp
+let escapePattern = /\d/g // "d" is a special charater which means digit.
+moreTxt = 'This reguar expression example was made in January 12, 2020.'
+matches = moreTxt.match(escapePattern)
+
+console.log(matches)
+
+// more Example
+escapePattern = /\d+/g
+matches = moreTxt.match(escapePattern)
+console.log(matches)
