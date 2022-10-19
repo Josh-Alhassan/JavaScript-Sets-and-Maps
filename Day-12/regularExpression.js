@@ -69,3 +69,8 @@ console.log(matches)
 escapePattern = /\d+/g
 matches = moreTxt.match(escapePattern)
 console.log(matches)
+
+// One or more times (+)
+let oneOrMorePattern = /\d+/g;
+matches = moreTxt.match(escapePattern)
+console.log(matches)
