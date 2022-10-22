@@ -47,4 +47,11 @@ console.error('We all make mistakes')
 ```
 
 ## console.table()
-The <code>console.table()</code> method display data as a table on the console. 
+The <code>console.table()</code> method display data as a table on the console. Displays tabular data as a table. The console.table() takes one required argument data, which must be an array or an object, and one additional optional parameter columns.
+
+```
+const names = ['Joshua', 'Alhassan', 'codescript', 'Jerry'];
+console.table(names)
+```
+
+The result of the code above displays a table with two coloumns. An index column to display the index and Value column to display the names items.

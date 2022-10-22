@@ -28,3 +28,55 @@ console.log('Warning is different from error')
 // console.error()
 console.error('This is an error message')
 console.error('We all make mistakes')
+
+// console.table()
+const names = ['Joshua', 'Alhassan', 'Naomi', 'Jerry'];
+console.table(names);
+
+const user = {
+    name: 'Joshua',
+    title: 'Developer',
+    country: 'Nigeria',
+    city: 'Lokoja',
+    age: 24
+}
+console.table(user)
+
+const countries = [
+    ['Nigeria', 'Abuja'],
+    ['Sweden', 'Stockholm'],
+    ['Norway', 'Oslo']
+]
+console.table(countries);
+
+const users = [
+    {
+      name: 'Asabeneh',
+      title: 'Programmer',
+      country: 'Finland',
+      city: 'Helsinki',
+      age: 250
+    },
+    {
+      name: 'Eyob',
+      title: 'Teacher',
+      country: 'Sweden',
+      city: 'London',
+      age: 25
+    },
+    {
+      name: 'Asab',
+      title: 'Instructor',
+      country: 'Norway',
+      city: 'Oslo',
+      age: 22
+    },
+    {
+      name: 'Matias',
+      title: 'Developer',
+      country: 'Denmark',
+      city: 'Copenhagen',
+      age: 28
+    }
+  ]
+  console.table(users)
