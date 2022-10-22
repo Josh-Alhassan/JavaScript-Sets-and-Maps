@@ -73,3 +73,6 @@ The <code>console.assert</code> method writes an error message to the console if
 console.assert(4 > 3, '4 is greater than 3') // no result
 console.assert(3 > 4, '3 is not greater than 4') // Assertion failed: 3 is not greater than 4
 ```
+
+## console.group()
+The <code>console.group</code> can help to group different log groups.

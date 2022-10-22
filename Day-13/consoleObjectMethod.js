@@ -112,3 +112,20 @@ for (let i = 0; i <= 10; i += 1) {
   console.log('The # is ' + i)
   console.assert(i % 2 === 0, {number: i, errorMessage: errorMessage})
 }
+
+// console.group()
+console.group('Name')
+console.log(names)
+console.groupEnd()
+
+console.group('Countries')
+console.log(countries)
+console.groupEnd()
+
+console.group('Object User')
+console.log(user)
+console.groupEnd()
+
+console.group('Object multiple users')
+console.log(users)
+console.groupEnd()
