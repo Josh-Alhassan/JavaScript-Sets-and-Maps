@@ -58,3 +58,11 @@ The result of the code above displays a table with two coloumns. An index column
 
 ## console.time()
 Starts a timer you can use to track how long an operation takes. Yo give each timer a unique name, and may have up to 10,000 timers running on a given page. When you call <code>console.timeEnd()</code> with the same name, the browser will output the time in milliseconds.
+
+## console.info()
+It displays information message on browser console.
+```
+console.info('30 Days Of JavaScript challenge is trending on Github')
+console.info('30 Days Of fullStack challenge might be released')
+console.info('30 Days Of HTML and CSS challenge might be released')
+```
