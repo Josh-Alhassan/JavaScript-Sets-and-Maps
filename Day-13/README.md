@@ -37,4 +37,14 @@ console.warn(
     'You are using React. do not touch the DOM. Virtual DOM will take care of handling the DOM!'
 )
 console.warn('Warning is different from error')
-``
+```
+
+## console.error()
+The <code>console.error()</code> method shows an error messages.
+```
+console.error('This is an error message')
+console.error('We all make mistakes')
+```
+
+## console.table()
+The <code>console.table()</code> method display data as a table on the console. 

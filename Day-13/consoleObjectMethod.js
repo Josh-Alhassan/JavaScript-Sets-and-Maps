@@ -19,6 +19,12 @@ console.log(
 // console.warn()
 console.warn('This is a warning')
 console.warn(
-    'You are using React. Do not touch the DOM. Virtual DOM will take care of handling the DOM!'
+    '%cYou are using React%c. Do not touch the DOM. Virtual DOM will take care of handling the DOM!',
+    'background-color: orange',
+    ''
 )
 console.log('Warning is different from error')
+
+// console.error()
+console.error('This is an error message')
+console.error('We all make mistakes')
