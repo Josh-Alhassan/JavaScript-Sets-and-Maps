@@ -108,3 +108,17 @@ moreTxt = 'This regular expression example was made in December 6,  2019.'
 regPattern = /^This/ // ^ means starts with
 matches = txt.match(regPattern)
 console.log(matches)  // ['This']
+
+// async function getData() {
+//     return await Promise.resolve(123);
+//   }
+//   const data = getData()
+//   console.log(data)
+
+function resolveAfter10Seconds() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            ('rejected');
+        }, 10000)
+    })
+}
