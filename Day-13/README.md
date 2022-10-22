@@ -66,3 +66,10 @@ console.info('30 Days Of JavaScript challenge is trending on Github')
 console.info('30 Days Of fullStack challenge might be released')
 console.info('30 Days Of HTML and CSS challenge might be released')
 ```
+
+## console.asset()
+The <code>console.assert</code> method writes an error message to the console if the assertion is false. If the assertion is true, nothing happens. The first parameter is an assertion expression. If this expression is false, an Assertion failed error message will be displayed.
+```
+console.assert(4 > 3, '4 is greater than 3') // no result
+console.assert(3 > 4, '3 is not greater than 4') // Assertion failed: 3 is not greater than 4
+```

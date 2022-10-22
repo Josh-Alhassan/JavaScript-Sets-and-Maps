@@ -105,3 +105,10 @@ const users = [
 console.info('30 Days Of JavaScript challenge is trending on Github')
 console.info('30 Days Of fullStack challenge might be released')
 console.info('30 Days Of HTML and CSS challenge might be released')
+
+// console.assert()
+for (let i = 0; i <= 10; i += 1) {
+  let errorMessage = `${i} is not even`
+  console.log('The # is ' + i)
+  console.assert(i % 2 === 0, {number: i, errorMessage: errorMessage})
+}
