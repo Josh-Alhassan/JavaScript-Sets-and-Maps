@@ -55,3 +55,6 @@ console.table(names)
 ```
 
 The result of the code above displays a table with two coloumns. An index column to display the index and Value column to display the names items.
+
+## console.time()
+Starts a timer you can use to track how long an operation takes. Yo give each timer a unique name, and may have up to 10,000 timers running on a given page. When you call <code>console.timeEnd()</code> with the same name, the browser will output the time in milliseconds.
