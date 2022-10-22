@@ -27,3 +27,14 @@ console.log(
   'color:yellow'
 ) // log output green red and yellow text
 ```
+
+## console.warn()
+We use <code>console.warn()</code> to give warning on browser. For instance to inform or warn deprecation of version of a package or bad practices.
+
+```
+console.warn('This is a warning')
+console.warn(
+    'You are using React. do not touch the DOM. Virtual DOM will take care of handling the DOM!'
+)
+console.warn('Warning is different from error')
+``
