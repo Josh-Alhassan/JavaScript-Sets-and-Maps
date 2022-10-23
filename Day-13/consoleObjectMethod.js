@@ -129,3 +129,11 @@ console.groupEnd()
 console.group('Object multiple users')
 console.log(users)
 console.groupEnd()
+
+// console.count()
+const func = () => {
+  console.count('Function has called')
+}
+func()
+func()
+func()

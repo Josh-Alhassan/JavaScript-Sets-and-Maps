@@ -76,3 +76,20 @@ console.assert(3 > 4, '3 is not greater than 4') // Assertion failed: 3 is not g
 
 ## console.group()
 The <code>console.group</code> can help to group different log groups.
+```
+console.group('Title')
+console.log(object)
+console.groupEnd()
+```
+
+## console.count()
+It prints the number of times the <code>console.count()</code> is called. It takes a string label parameter. It is very helpful to count the number of time a function is called.
+
+```
+const func = () => {
+  console.count('Function has been called')
+}
+func()
+func()
+// Function has been called: 2
+```
