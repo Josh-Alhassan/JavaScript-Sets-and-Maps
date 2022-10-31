@@ -25,3 +25,7 @@ class Person {
 }
 const person = new Person()
 console.log(person)
+```
+
+## Class Constructor
+The constructor is a builtin function which allows us to create a blueprint for our object. The constructor function starts with a keyword followed by a parenthesis. We use the *this* keyword to attach the constructor parameters with the class.
