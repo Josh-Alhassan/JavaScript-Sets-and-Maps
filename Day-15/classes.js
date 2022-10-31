@@ -8,8 +8,13 @@ console.log(person)
 // Class constructor
 console.log('Class Constructor')
 class PersonClass {
-    constructor(firstName, lastName, age, country, city) {
-        console.log(this)
+    constructor(
+        firstName = 'Alhassan',
+        lastName = 'Joshua',
+        age = 25,
+        country = 'Nigeria',
+        city = 'Lokoja'
+    ) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -25,3 +30,8 @@ const person1 = new PersonClass('Jerry', 'Able', 20, 'Finland', 'Lokoja');
 
 console.log(person1)
 // console.log(person2)
+
+// Default values with constructor
+
+const person3 = new PersonClass()
+console.log(person3)

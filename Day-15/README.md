@@ -29,3 +29,23 @@ console.log(person)
 
 ## Class Constructor
 The constructor is a builtin function which allows us to create a blueprint for our object. The constructor function starts with a keyword followed by a parenthesis. We use the *this* keyword to attach the constructor parameters with the class.
+
+## Default Values with Constructor
+The constructor function properties may have a defualt value like other regular functions.
+```
+class Person {
+    constructor(
+        firstName = 'Alhassan',
+        lastName = 'Joshua',
+        age = 25,
+        country = 'Nigeria',
+        city = 'Lokoja'
+    ) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.country = country;
+        this.city = city;
+    }
+}
+```
