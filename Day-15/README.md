@@ -6,4 +6,15 @@ Creating an object from a class is called ***class instantiation***.
 
 Object literal is a singleton. If we want to get a similar object, we have to write it. However, class allows to create many objects. This helps reduce the amount of code and repetition of code.
 
-## Defining a class
+## Defining a classes
+To define a class in JavaScript we need the keyword *class*, the name of a class in *camelCase* and block code(two curly brackets).
+
+```
+// syntax
+class ClassName {
+    // code goes here
+}
+```
+
+## Class instantiation
+
